@@ -12,6 +12,9 @@
 <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 <!-- tailwind custom color -->
+<!-- font awasom -->
+<script src="https://kit.fontawesome.com/027f4b2125.js" crossorigin="anonymous"></script>
+
 <script>
     tailwind.config = {
       theme: {
@@ -31,11 +34,72 @@
     }
 </style>
 </head>
-<body class="font-manrope">
-    <header>
+<body class="font-manrope bg-white">
+    <header class="container mx-auto">
+      <section class="lg:py-20">
+        <div class="hero">
+          <div class="hero-content flex-col lg:flex-row gap-9">
+            <div>
+              <h1 class="text-5xl md:text-7xl font-extrabold text-[#1c1c1c]">It's good <br>
+                tea time at The <br> Tea House</h1>
+              <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+              <button class="btn btn-primary bg-gradient-to-r from-[#FF8938] to-[#F00] border-0">Get Started <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div>
+            <img src="/images/banner.png" class="max-w-sm" />
+            <div class="flex items-center gap-5 drop-shadow-lg rounded-lg -mt-20 bg-white p-5 w-60">
+              <div class="text-amber-400 text-3xl	">
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div>
+                <h4 class="text-[#1c1c1c] text-3xl font-bold">5.00</h4>
+                <p class="text-[#777] text-base font-semibold">Trust Pilot Ratings</p>
+              </div>
+            </div>
+            </div>
+            
 
+          </div>
+        </div>
+      </section>
     </header>
-    <main></main>
+    <main class="container mx-auto">
+      <!-- featured products  -->
+      <section class="text-center mt-12">
+        <h2 class="text-[#1c1c1c] text-5xl font-extrabold mb-5">Our Featured Products</h2>
+        <p class="text-[#777] text-base font-medium lg:max-w-4xl mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 py-20">
+          <div class="card p-7 shadow-xl">
+            <figure><img src="/images/tea-1.png" alt="Shoes" /></figure>
+            <div class="card-body text-center">
+              <h2 class="text-[#1c1c1c] text-2xl font-extrabold">Milk Tea</h2>
+              <p class="text-[#777] text-base font-semibold">Creamer could be replaced by fresh milk</p>
+            </div>
+          </div>
+          <div class="card p-7 shadow-xl">
+            <figure><img src="/images/tea-2.png" alt="Shoes" /></figure>
+            <div class="card-body text-center">
+              <h2 class="text-[#1c1c1c] text-2xl font-extrabold">Black Tea</h2>
+              <p class="text-[#777] text-base font-semibold">Creamer could be replaced by fresh milk</p>
+            </div>
+          </div>
+          <div class="card p-7 shadow-xl">
+            <figure><img src="/images/tea-3.png" alt="Shoes" /></figure>
+            <div class="card-body text-center">
+              <h2 class="text-[#1c1c1c] text-2xl font-extrabold">Lemon Tea</h2>
+              <p class="text-[#777] text-base font-semibold">Creamer could be replaced by fresh milk</p>
+            </div>
+          </div>
+          <div class="card p-7 shadow-xl">
+            <figure><img src="/images/tea-4.png" alt="Shoes" /></figure>
+            <div class="card-body text-center">
+              <h2 class="text-[#1c1c1c] text-2xl font-extrabold">Green Tea</h2>
+              <p class="text-[#777] text-base font-semibold">Creamer could be replaced by fresh milk</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     
 </body>
 </html>
